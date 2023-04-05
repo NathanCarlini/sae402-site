@@ -10,13 +10,13 @@ export default function Header() {
       </div>
       <div className="flex flex-row items-center justify-between gap-9 pr-20">
         <p>
-          <a href="#">Concept </a>
+          <a href="#" className="hover:underline">Concept </a>
         </p>
         <p>
-          <a href="#">Réalisation </a>
+          <a href="#" className="hover:underline">Réalisation </a>
         </p>
         <p>
-          <a href="#">Conclusion </a>
+          <a href="#" className="hover:underline">Conclusion </a>
         </p>
       </div>
     </div>

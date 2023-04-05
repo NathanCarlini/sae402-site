@@ -2,58 +2,28 @@ import "./App.css";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Part from "./components/Part";
-// import Gallery from "./components/Gallery";
 import vrHeadset from "./assets/vrHeadset.jpg";
+
+
 function App() {
+  let data = [
+    'Lobjectif de la SAE étaitr de créer une application web promouvant un geste éco-responsable à l aide de technos 3D, AR (Augmented Reality) ou VR (Virtual Reality). Cette SAE réalisée en binôme nous a fait nous adapter à un environnement inconnu même si la base de code était connue. Il a fallu être vréatif afin de concevoir un environnement de jeu inventif mais simple, tout en restant original',
+    'Contrary to popular belief, Lorem Ipsum is not simply random text. Ithas roots in a piece of classical Latin literature from 45 BC, makingit over 2000 years old. Richard McClintock, a Latin professor atHampden-Sydney College in Virginia, looked up one of the more obscureLatin words, consectetur, from a Lorem Ipsum passage, and goingthrough the cites of the word in classical literature, discovered theundoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good andEvil) by Cicero, written in 45 BC. This book is a treatise on thetheory of ethics, very popular during the Renaissance. The first lineof Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line insection 1.10.32.'
+  ]
   return (
     <>
       <Header />
       <div className="h-60vh flex justify-center items-center bg-VR bg-no-repeat bg-center bg-cover">
-        <div className="h-max w-max text-center p-4 bg-lime-950">
+        <div className="h-max w-max text-center p-4 bg-green-950">
           <p className="text-5xl font-bold capitalize text-white">
             SAE 402 : Concevoir un dispositif interactif
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col h-80vh">
-        <p className="text-4xl font-bold text-green-950 pl-7 pt-7 uppercase mb-10">
-          Concept
-        </p>
-        <div className="px-10 pb-10 flex flex-row h-fit gap-10">
-          <img src={vrHeadset} className="w-50%" />
-          <p className="w-40%">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32.
-          </p>
-        </div>
-        <p className="px-10 leading-loose">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32.
-        </p>
-      </div>
-      <div className="flex flex-col h-70vh bg-green-950">
-        <p className="text-4xl font-bold text-wite pl-7 pt-7 uppercase mb-10 text-white">
+    <Part text1={data[0]} text2={data[1]} name='test'/>
+      <div className="flex flex-col h-80vh bg-green-950">
+        <p className="text-4xl font-bold text-wite pr-7 pt-7 uppercase mb-10 text-white self-end">
           Développement
         </p>
         <div className="px-10 pb-10 flex flex-row h-fit justify-around">
@@ -95,6 +65,10 @@ function App() {
           section 1.10.32.
         </p>
       </div>
+      <Part text1={data[0]} text2={data[1]} name='test'/>
+
+
+
     </>
   );
 }
