@@ -5,7 +5,7 @@ import Gallery from './Gallery'
 export default function Part({text1, text2, name}) {
   return (
    <>
-    <div className="flex flex-col h-90vh">
+    <div className="flex flex-col h-60vh">
         <p className="text-4xl font-bold text-green-950 pl-7 pt-7 uppercase mb-10 ">
           {name}
         </p>
