@@ -3,6 +3,7 @@ import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Part from "./components/Part";
 import Part2 from "./components/Part2";
+import Part3 from "./components/Part3";
 import vrHeadset from "./assets/vrHeadset.jpg";
 import Textes from "./assets/Data.js";
 
@@ -33,21 +34,28 @@ function App() {
         text2={Textes[1].text2}
         name={Textes[1].nom}
       />
-      <div className="h-70vh flex flex-col justify-center items-center">
+      <Part3
+        text1={Textes[2].text1}
+        text2={Textes[2].text2}
+        name={Textes[2].nom}
+       
+      />
+      <div className="h-70vh flex flex-col justify-center items-center bg-loft">
         <div className="flex flex-row justify-center items-center gap-8">
           <a href="https://github.com/NathanCarlini/SAE402/">
-            <div className="bg-green-950 rounded-full py-1 px-2 text-white opacity-70 text-lg">Code de l'application</div>
+            <div className="bg-white rounded-full py-1 px-2 text-green-950 text-lg">Code de l'application</div>
           </a>
           <a href="https://github.com/NathanCarlini/sae402-site/">
-            <div className="bg-green-950 rounded-full py-1 px-2 text-white opacity-70 text-lg">Code du site React</div>
+            <div className="bg-white rounded-full py-1 px-2 text-green-950 text-lg">Code du site React</div>
           </a>
         </div>
         <a href="https://mmi.unilim.fr/~meunier49/SAE402-1/" className="mt-32">
-          <div className="bg-green-950 rounded-full py-3 px-6 text-white opacity-70 text-5xl font-bold">Jouer</div>
+          <div className="bg-white rounded-full py-3 px-6 text-green-950 text-5xl font-bold">Jouer</div>
         </a>
       </div>
     </>
   );
+  
 }
 
 export default App;

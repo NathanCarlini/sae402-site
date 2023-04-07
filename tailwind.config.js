@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'VR': "url('./assets/vrHeadset.jpg')",
+        'loft': "url('./assets/screen5.PNG')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
       spacing: {
@@ -16,6 +17,9 @@ module.exports = {
         '80vh': '80vh',
         '90vh': '90vh',
         '500': '500px',
+        '341': '341px',
+        '566': '566px',
+        '318': '318px',
         '750': '750px',
         '40%': '40%',
         '50%': '50%',

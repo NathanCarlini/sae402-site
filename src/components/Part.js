@@ -1,5 +1,6 @@
 import React from 'react'
 import vrHeadset from '../assets/vrHeadset.jpg'
+import ass from '../assets/ass.png'
 import Gallery from './Gallery'
 
 export default function Part({text1, text2, name, img}) {
@@ -13,7 +14,7 @@ export default function Part({text1, text2, name, img}) {
           <p className="w-40% leading-loose">
             {text1}
           </p>
-          <img src={vrHeadset} className="w-50%" />
+          <img src={ass} className="w-566 h-318" />
         </div>
         <p className="px-10 leading-loose">
           {text2}
